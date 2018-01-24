@@ -9,12 +9,11 @@ if (localStorage.getItem('listado')){
 
 $('#envio').click(function(e){
   e.preventDefault();
-  let datos=$('#item1').val()+' '+$('#item2').val()+' '+$('#item3').val()+' '+$('#item4').val();
+  let datos=$('#item1').val()+' '+$('#item2').val()+' '+$('#item3').val();
   $('ul').append('<li>'+datos+'</li>');
   $('#item1').val('');
   $('#item2').val('');
   $('#item3').val('');
-  $('#item4').val('');
   listado.push(datos);
   localStorage.setItem('listado', JSON.stringify(listado));
 });
