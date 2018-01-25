@@ -10,7 +10,9 @@
 <body>
 
   <div class="small-container">
-    <h1>Formulario</h1>
+    <div id="app">
+  <h1>{{ message }}</h1>
+</div>
 
     <form>
       <input id="item1" type="text" placeholder="Pon tu nombre">
@@ -24,7 +26,14 @@
     <ul></ul>
 
     <button id="clear">Limpiar</button>
+
+    <div id="app-2">
+  <span v-bind:title="message">
+    Poner el ratón unos segundos.
+  </span>
+</div>
   </div>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <script src="local.js"></script>
 

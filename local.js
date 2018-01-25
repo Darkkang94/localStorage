@@ -23,3 +23,17 @@ $('#clear').click(function(e){
   localStorage.removeItem('listado');
   $('h2').html('</br>El texto ha sido limpiado');
 })
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Formulario'
+  }
+})
+
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: 'Esta página ha cargado el ' + new Date().toLocaleString()
+  }
+})
